@@ -24,17 +24,7 @@ const shuffle = require('shuffle-array');
 
 // APN
 var apn = require('apn');
-var join = require('path').join
-    , pfx = join(__dirname, '/vipme.p12');
-
-var options = {
-    pfx: pfx,
-    passphrase: '1234',
-    production: false
-};
-var apnProvider = new apn.Provider(options);
-
-const appName = 'Mosque';
+const appName = 'Dynamic REST API';
 
 //Model object constructor
 var Model = function (object) { };
@@ -77,7 +67,7 @@ Model.demoModel = async function demoModel(req, result) {
     var param = req.body;
     var response_arr = [];
     var moment = require('moment'); // require
-    console.log('--------------------Paymen Gateway------------------');
+    // console.log('--------------------Paymen Gateway------------------');
     /*const customer = await stripe.customers.list({
         email:'malisagar1995@gmail.com'
     });
@@ -100,13 +90,13 @@ Model.demoModel = async function demoModel(req, result) {
     //     { source: card.id },
     // );
 
-    const card = await stripe.customers.createSource(
-        'cus_JfTgZVR9aHv1uW',
-        {source: 'card_1J2A3AGAYWqSYyB4cUmSr9oZ'}
-      );
+    // const card = await stripe.customers.createSource(
+    //     'cus_JfTgZVR9aHv1uW',
+    //     {source: 'card_1J2A3AGAYWqSYyB4cUmSr9oZ'}
+    //   );
       
 
-    console.log('customer',customer);
+    // console.log('customer',customer);
 
     console.log('--------------------Date Condition------------------');
     var Today = moment().format('YYYY-MM-DD');
@@ -130,7 +120,7 @@ Model.demoModel = async function demoModel(req, result) {
 
     response_arr['success'] = 1;
     response_arr['msg'] = 'This is demo!';
-    response_arr['data'] = customer;
+    response_arr['data'] = Today;
     result(null, response_arr);
 
 };
