@@ -1,0 +1,40 @@
+{
+  "name": "mosque_api",
+  "version": "1.0.0",
+  "description": "mosque_api",
+  "main": "server.js",
+  "scripts": {
+    "serve": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apn": "^2.2.0",
+    "async": "^3.1.0",
+    "body-parser": "^1.19.0",
+    "braintree": "^2.23.0",
+    "cron": "^1.8.2",
+    "dateformat": "^3.0.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.6-alpha.5",
+    "fcm-node": "^1.5.2",
+    "firebase-admin": "^8.9.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "handlebars": "^4.7.6",
+    "hbs": "^4.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.31",
+    "multer": "^1.4.2",
+    "mysql": "^2.17.1",
+    "node-datetime": "^2.1.2",
+    "node-time-ago": "^1.0.0",
+    "nodemailer": "^6.4.11",
+    "opentok": "^2.10.0",
+    "request": "^2.88.0",
+    "shuffle-array": "^1.0.1",
+    "stripe": "^8.145.0"
+  }
+}
